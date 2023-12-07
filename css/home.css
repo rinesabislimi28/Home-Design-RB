@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 #rb-home-design {
-    background: rgb(239, 250, 255);
+    background: rgb(190, 213, 222);
     color: rgb(0, 0, 0);
 
 }
@@ -24,7 +24,7 @@ nav{
     flex-wrap: wrap;
 
 }
-.logo {
+.rb-logo {
     width: 140;
 }
 nav ul li {

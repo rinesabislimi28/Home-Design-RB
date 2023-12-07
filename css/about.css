@@ -65,7 +65,7 @@ button {
     border-radius: 20px;
     transition: .4s ease;
 }
-button:hover{
+button :hover {
     background: transparent;
     border: 2px solid rgb(142, 10, 10)(93,0,255);
     border-radius: 20px;

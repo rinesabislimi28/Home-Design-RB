@@ -7,11 +7,10 @@
 body {
     background-color: rgb(135, 135, 44);
 }
+/*Header */
 #rb-header {
     background:rgb(190, 213, 222);
     color:rgb(0,0,0);
-}
-#rb-header {
     width: 100%;
     height: 14vh;
     position: sticky;
@@ -56,20 +55,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-.rb-header-text {
-    margin-top: 15%;
-    font-size: 30px;
-}
-.rb-header-text h1 {
-    text-align: center;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-}
-.rb-header-text:hover {
-    color: rgba(34, 237, 0, 0.793);
-    transition: .4s ease;
-}
+/*Section*/
 .rb-container {
     padding: 10px;
 }
@@ -87,13 +73,17 @@ nav ul li a:hover::after {
     object-position: center;
     border-radius: 25px;
 }
+.rb-about img:hover {
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px 5px rgb(29, 51, 54);
+}
 .rb-about-text {
     width: 550px;
     font-weight: 400;
     color: rgb(0, 0, 0);
     font-size: large;
 }
-.main {
+.rb-main {
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;

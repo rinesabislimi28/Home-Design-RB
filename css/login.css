@@ -1,6 +1,92 @@
+/*All elements*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Section*/
+
+.rb-container {
+    height: 100vh;
+    width: 100%;
+    background-color:#a3dde6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rb-form {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    max-width: 480px;
+    width: 100%;
+    padding: 30px;
+}
+.rb-header {
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(8, 61, 137);
+    text-align: center;
+}
+form {
+    margin-top: 30px;
+}
+form .rb-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 25px;
+}
+.rb-eyes-icon{
+    position: absolute;
+    transform: translateY(-50%);
+    color: grey;
+    top: 50%;
+    right: 10px;
+}
+.rb-field button {
+    background-color: rgb(8, 135, 167);
+    color: white;
+}
+.rb-field button:hover {
+    background-color:rgb(38, 68, 76);
+    color: rgb(255, 247, 247);   
+}
+.rb-field  input ,.rb-field button {
+    font-weight: 500;
+    font-size: 17px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.rb-field input{
+    border: 1px solid black;
+    padding: 0 15px;
+}
+.rb-field input:focus {
+    border-bottom-width: 2px;
+}
+.rb-form-link {
+    text-align: right;
+    margin-top: 10px;
+}
+.rb-form-link p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.rb-form a {
+    text-decoration: none;
+}
+.rb-form a:hover {
+    color: red;
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+   .form {
+    padding: 15px 10px;
+   }
 }

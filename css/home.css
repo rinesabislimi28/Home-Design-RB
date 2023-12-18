@@ -100,7 +100,6 @@ li:hover .dropdown {
 }
 .rb-section-text h1 {
     color: azure;
-    width: 100%;
     height: 70vh;
     margin-left: 15%;
     display: flex;
@@ -111,9 +110,9 @@ li:hover .dropdown {
     background-repeat: no-repeat;
     object-fit: cover;
     object-position: center;
-    width: 35vw;
-    height: 40vh;
-    margin: 20%;
+    height: 50vh;
+    width: 40vw;
+    margin: 5%;
 }
 .rb-section-text h1:hover {
     color: rgba(34, 237, 27, 0.793);

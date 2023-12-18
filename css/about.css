@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-body {
-    background-color: rgb(135, 135, 44);
-}
 /*Header */
 #rb-header {
     background:rgb(190, 213, 222);
@@ -46,7 +43,7 @@ nav ul li a::after {
     content:'';
     width: 0;
     height: 3px;
-    background: #0acd17;
+    background: #44aa4b;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -60,70 +57,61 @@ nav ul li a:hover::after {
     padding: 10px;
 }
 .rb-about {
-    width: 100%;
-    padding: 78 0px;
-    background-color: rgb(72, 106, 128);
+    background-color: rgb(81, 123, 151);
 }
 .rb-about img {
-    margin: 50px 16px;
-    width: 30em;
-    height: 32em;
+    height: 30em;
     object-fit: cover;
     background-repeat: no-repeat;
     object-position: center;
     border-radius: 25px;
+    margin-top: 5%, 5%;
 }
 .rb-about img:hover {
     border: 2px solid rgb(0, 0, 0);
     box-shadow: 5px 5px 5px 5px rgb(29, 51, 54);
 }
 .rb-about-text {
-    width: 550px;
     font-weight: 400;
     color: rgb(0, 0, 0);
-    font-size: large;
 }
 .rb-main {
-    width: 1130px;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
  }
- .rb-about-text h1 {
+.rb-about-text h1 {
     text-transform:capitalize;
-    font-size: 60px;
-    margin: 20px;
+    font-size: 50px;
+    margin: 20px 0px;
+    text-align: left;
+    font-weight: 600;
 }
  .rb-about-text h5 {
     text-transform: capitalize;
     font-size: 25px;
     margin-bottom: 25px;
-  
- }
- span {
+}
+span {
     color: #fcf;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
-
- }
+}
 button {
     background-color: rgb(9, 142, 29);
     color: white;
     text-decoration: none;
     font-weight: bold;
     border: 2px solid white;
-    cursor: pointer;
     padding: 20px 30px;
-    margin: 15px;
     transition: .4s ease;
 }
 button:hover {
     background-color:rgb(34, 36, 196);
-    border: 2px solid rgb(142, 10, 10)(93,0,255);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
-    cursor: pointer;
 }
 

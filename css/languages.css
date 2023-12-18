@@ -4,3 +4,34 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
+body {
+    background-color: aquamarine;
+}
+.rb-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.rb-card {
+    width: 345px;
+    background-color: rgb(172, 229, 237);
+    border-radius: 10px;
+    margin: 20px;
+}
+.rb-card img {
+    width: 100%;
+    height: auto;
+}
+.rb-card-content {
+    padding: 16px;
+    text-align: center;
+}
+.rb-card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.rb-card-content p {
+    color: rgb(1, 1, 52);
+}

@@ -15,39 +15,42 @@
 
 <body id="rb-home-design">
 
+  <!--Header-->
   <header>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-dark bg-white fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home Design RB'</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../html/home.html"><img src="../fotot/icon1.jpg"></a>
+        <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Home Design RB'</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <li class="rb-nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="../html/home.html"><i class="fa-solid fa-house"></i> Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Services</a>
-                <a class="nav-link" href="#">Terms</a>
+              <li class="rb-nav-item">
+                <a class="nav-link text-dark" href="../html/about.html"><i class="fa-solid fa-user"></i> About</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Contact us
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Home</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="rb-nav-item">
+                <a class="nav-link text-dark" href="../html/services.html"><i class="fa-solid fa-paint-roller"></i> Services</a></li>
+              </li>
+              <li class="rb-nav-item">
+                <a class="nav-link text-dark" href="../html/terms.html"><i class="fa-regular fa-clipboard"></i> Terms</a></li>
+              </li> 
+              <li class="rb-nav-item">
+                <a class="nav-link text-dark" href="../html/inspiration.html"><i class="fa-solid fa-lightbulb"></i> Inspiration</a></li>
+              </li> 
+              <li class="rb-nav-item">
+                <a class="nav-link text-dark" href="../html/contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+              </li> 
+              <li ckass="rb-nav-item"> 
+                <a class="nav-link text-dark" href="../html/login.html"><i class="fa-regular fa-user"></i> Login</a></li>
               </li>
             </ul>
           </div>
@@ -56,49 +59,19 @@
     </nav>
   </header>
 
-  <!--Header-->
-  <header>
-    <div id="rb-header">
-      <div class="rb-container">
-        <nav>
-          <img src="../fotot/icon1.jpg" class="rb-logo">
-          <ul>
-            <li><a href="../html/home.html" class="rb-nav-item"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a href="../html/about.html" class="rb-nav-item"><i class="fa-solid fa-user"></i>About</a></li>
-            <li><a href="../html/services.html" class="rb-nav-item"><i class="fa-solid fa-paint-roller"></i>Services</a>
-              <div class="dropdown">
-                <ul>
-                  <a href="#">Language</a>
-                </ul>
-              </div>
-            </li>
-            <li><a href="../html/terms.html" class="rb-nav-item"><i class="fa-regular fa-clipboard"></i>Terms</a></li>
-            <li>
-              <a href="../html/contact.html" class="rb-nav-item"><i class="fa-solid fa-address-book"></i>Contact</a>
-              <div class="dropdown">
-                <a href="#">Login </a>
-                <a href="#">Sign up</a>
-              </div>
-            </li>
-            <li><a href="../html/inspiration.html" class="rb-nav-item"><i class="fa-solid fa-lightbulb"></i>Inspiration</a></li>
-          </ul>
-        </nav>
+  <!--Section-->
+  <section>
+    <div class="rb-section-text">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h1>Home Design-<strong> RB'</strong></h1>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <img src="../fotot/home1.jpg">
+        </div>
       </div>
     </div>
-  </header>
-  <!--Section-->
-    <section>
-        <div class="rb-section-text">
-            <div class="row">
-               <div class="col-md-6 col-xs-12">
-                   <h1>Home Design-<strong> RB'</strong></h1>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                  <img src="../fotot/home1.jpg">
-                </div>
-            </div>
-       </div>
-    </section>
+  </section>
 
     <!--Footer-->
     <footer>

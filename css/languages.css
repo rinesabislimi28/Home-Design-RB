@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }
 body {
-    background-color: aquamarine;
+    background-color: rgb(146, 208, 188);
 }
+/*Section*/
 .rb-card-container {
     display: flex;
     justify-content: center;
@@ -15,7 +16,7 @@ body {
 }
 .rb-card {
     width: 345px;
-    background-color: rgb(172, 229, 237);
+    background-color: rgb(79, 206, 92);
     border-radius: 10px;
     margin: 20px;
 }
@@ -34,4 +35,10 @@ body {
 }
 .rb-card-content p {
     color: rgb(1, 1, 52);
+}
+.rb-card-content button:hover {
+    transform: rotate(360deg);
+    background-color: rgb(49, 144, 8);
+    color: black;
+    transition: .5s ease;
 }

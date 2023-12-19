@@ -18,22 +18,38 @@
   
  <!--Header-->
  <header>
-    <div id="rb-header">
-      <div class="rb-container">
-        <nav>
-          <img src="../fotot/icon1.jpg" class="rb-logo"> 
-          <ul>
-            <li><a href="../html/home.html" class="rb-nav-item"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a href="../html/about.html" class="rb-nav-item"><i class="fa-solid fa-user"></i>About</a></li>
-            <li><a href="../html/services.html" class="rb-nav-item"><i class="fa-solid fa-paint-roller"></i>Services</a></li>
-            <li><a href="../html/terms.html" class="rb-nav-item"><i class="fa-regular fa-clipboard"></i>Terms</a></li>
-            <li><a href="../html/contact.html" class="rb-nav-item"><i class="fa-solid fa-address-book"></i>Contact</a></li>
-            <li><a href="../html/inspiration.html" class="rb-nav-item"><i class="fa-solid fa-lightbulb"></i>Inspiration</a></li>
+  <nav class="navbar navbar-dark bg-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../html/home.html"><img src="../fotot/icon1.jpg"></a>
+      <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Home Design RB'</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="../html/home.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <li><a class="nav-link text-dark" href="../html/about.html"><i class="fa-solid fa-user"></i> About</a></li>
+              <li><a class="nav-link text-dark" href="../html/services.html"><i class="fa-solid fa-paint-roller"></i> Services</a></li>
+              <li><a class="nav-link text-dark" href="../html/terms.html"><i class="fa-regular fa-clipboard"></i> Terms</a></li>
+              <li><a class="nav-link text-dark" href="../html/inspiration.html"><i class="fa-solid fa-lightbulb"></i> Inspiration</a></li>
+              <li><a class="nav-link text-dark" href="../html/contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+              <li><a class="nav-link text-dark" href="../html/login.html"><i class="fa-regular fa-user"></i> Login</a></li>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </div>
-   
+  </nav>
+</header>
+
   <!--Section-->
   <section class="rb-about">
     <div class="rb-container">
@@ -47,7 +63,7 @@
               <h1>About Us</h1>
               <h5>Home design</h5>
               <p>Welcome to a world, where ideas merge seamlessly with function, creating the perfect harmony in your home design. Our approach to creating living spaces goes beyond aesthetic to creating an experience that reflects your unique style and personality. From the moment you enter your home, every element is carefully selected to reflect your taste and preferences.</p>
-              <a href="https://www.quora.com/How-do-I-get-front-end-developer-experience-as-a-student"> <button type="button">Click me</button></a>
+              <a href="https://www.quora.com/How-do-I-get-front-end-developer-experience-as-a-student"> <button type="button" class="rb-button">Click me</button></a>
             </div>
           </div>
         </div>

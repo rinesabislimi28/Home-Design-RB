@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.carousel-item h5 {
+.carousel-item h5 p {
     font-size: 20px;
-}
-.carousel-item p{
-    font-size: 15px;
+    font-weight: 500;
 }

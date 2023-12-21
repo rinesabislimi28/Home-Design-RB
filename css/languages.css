@@ -42,3 +42,7 @@ body {
     color: black;
     transition: .5s ease;
 }
+.rb-card-content:hover {
+    color: red;
+    background-color: rgb(231, 255, 231);
+}

@@ -67,14 +67,7 @@ span {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
 }
-.navbar-brand img {
-    max-width: 100%;
-    display: flex;
-    
-    justify-content: flex-start;
-    position: relative;
-    right: 1125px;
-}
+
 .navbar-toggler, .text-bg-dark{
     height: 40px;
     align-items: center;

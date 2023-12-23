@@ -1,0 +1,57 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+/*Section*/
+.rb-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.rb-card {
+    background-color: rgb(79, 206, 92);
+    border-radius: 15px;
+    width: 325px;
+    margin:15px;
+    box-shadow: 8px 5px rgb(34, 48, 34);
+}
+.rb-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.rb-card-content {
+    padding: 16px;
+    text-align: center;
+}
+.rb-card-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.rb-card-content p {
+    color: rgb(1, 1, 52);
+    text-align: justify;
+}
+.rb-card-content button:hover {
+    transform: rotate(360deg);
+    background-color: rgb(49, 144, 8);
+    color: black;
+    transition: .5s ease;
+}
+.rb-card-content:hover {
+    color: red;
+    background-color: rgb(184, 250, 184);
+}
+button a {
+    text-decoration:none;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    .rb-card {
+        width:100%
+    }
+}

@@ -19,6 +19,7 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    cursor: pointer;
 }
 .rb-btn .rb-play {
     position: relative;
@@ -68,12 +69,15 @@ section {
     z-index: 10000;
     transition: 0.5s;
 }
+.rb- .rb-active {
+    display: none;
+}
 .rb-video.rb-active {
     transform: translate(-50%, -50%) scale(1);
     transition-delay: 0.5s;
 }
 .rb-video video {
-    max-width: 800px;
+    width: 300px;
     border: 7px solid black;
     box-shadow: 0 15px 35px black
 }
@@ -87,7 +91,7 @@ section {
     color: white;
 }
 @media(max-width: 810){
-    .clip-video {
-        max-width: 80%;
+    .rb-video video {
+        width: 60%;
     }
 }

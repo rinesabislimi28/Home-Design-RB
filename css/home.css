@@ -22,7 +22,7 @@
     object-fit: cover;
     object-position: center;
     height: 50vh;
-    margin: 30% 5% 20% 5%;
+    margin: 20% 5% 20% 5%;
 }
 .rb-section-text h1:hover {
     color: rgba(34, 237, 27, 0.793);

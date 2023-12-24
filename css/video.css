@@ -34,6 +34,9 @@ section {
     cursor: pointer;
     transition: 0.5s;
 }
+
+
+
 .rb-btn .rb-play::before {
     content: '';
     position: absolute;
@@ -42,6 +45,14 @@ section {
     border-right: 0px solid transparent;
     border-bottom: 15px solid transparent;
     transform: translateX(5px);
+}
+
+.rb-play.hide-button:before {
+    content: none;
+}
+
+.rb-play.hide-button {
+    background: rgb(152, 221, 157);
 }
 .rb-btn p {
     margin-top: 10px;

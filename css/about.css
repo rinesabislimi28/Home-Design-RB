@@ -1,10 +1,15 @@
-* {
-    margin: 0 auto;
-    padding: 0;
+ {
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+section {
+    padding: 25px 0;
+}
+
 /*Section*/
+
+
 .rb-container {
     padding-top: 10px;
 }
@@ -29,7 +34,6 @@
 }
 .rb-main {
     max-width: 95%;
-    margin-top: 12%;
     display: flex;
     align-items: center;
     justify-content: center;

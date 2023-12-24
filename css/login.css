@@ -21,6 +21,7 @@
     border-radius: 8%;
     max-width: 450px;
     padding: 5%;
+    margin: 0 auto;
 }
 .rb-heading {
     font-weight: 600;

@@ -5,19 +5,76 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body {
-    background-color: aquamarine;
+    background-color: rgb(119, 219, 186);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.rb-table-box {
-    margin: 50px auto;
+.rb-content {
+   width: 800px;
+   padding: 10px;
 
 }
-.rb-table-row {
-    display: table;
-    width: 80%;
-    margin: 10px auto;
-    padding: 12px auto;
-    background: transparent;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    box-shadow: 0px 1px 4px auto rgb(0, 0, 0);
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+}
+th, td {
+    border: 1px solid #000000;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+th {
+    background-color: blueviolet;
+    color: blanchedalmond;
+}
+td {
+    background-color: rgb(162, 118, 204);
+    color: #fffafa;
+}
+@media (max-width: 768px){
+    thead {
+       display: none;
+   }
+   .rb-table, tbody,tr, td {
+       display: block;
+       width: 100%;
+    }
+    tr {
+        margin-bottom: 20px;
+
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width:30%;
+        text-align: center;
+        padding: 10px 0 10px 10px;
+        font-weight: bold;
+    }
+    td {
+        padding: 0;
+        padding-left: 30%;
+        position: relative;
+        background-color: aquamarine;
+        color: black;
+    }
+    td  span {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: aliceblue;
+        color: black;
+    }
+}
+.rb-job {
+    text-decoration: none;
+    color: beige;
 }

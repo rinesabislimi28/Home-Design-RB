@@ -1,15 +1,15 @@
 * {
-    margin: 0 auto;
-    padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
-}
+} 
 /*Section*/
+.rb-history {
+    background-color: #e2eecf;
+}
 .rb-card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
 }
 .rb-card {
     background-color: rgb(79, 206, 92);
@@ -49,9 +49,4 @@
 button a {
     text-decoration:none;
     color: white;
-}
-@media screen and (max-width: 768px){
-    .rb-card {
-        width:100%
-    }
 }

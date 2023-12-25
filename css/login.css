@@ -1,19 +1,15 @@
-/*All elements*/
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
 }
 /*Section*/
-.rb-container {
+.rb-login  {
     height: 100vh;
     width: 100%;
     background-color:#a3dde6;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
 }
 .rb-form {
     background-color: white;
@@ -21,7 +17,7 @@
     border-radius: 8%;
     max-width: 450px;
     padding: 5%;
-    margin: 0 auto;
+    margin:0 auto;
 }
 .rb-heading {
     font-weight: 600;
@@ -77,10 +73,5 @@ form .rb-field {
 .rb-form a:hover {
     color: red;
     text-decoration: underline;
-}
-@media screen and (max-width: 768px){
-   .rb-form {
-     width: 100%;
-   }
 }
 

@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans',sans-serif;
 }
 .carousel-item h5 p {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }

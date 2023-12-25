@@ -1,15 +1,11 @@
- {
+* {
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
 }
-
+/*Section*/
 section {
     padding: 25px 0;
 }
-
-/*Section*/
-
-
 .rb-container {
     padding-top: 10px;
 }
@@ -31,6 +27,7 @@ section {
 .rb-about-text {
     font-weight: 400;
     color: rgb(0, 0, 0);
+    text-align: justify;
 }
 .rb-main {
     max-width: 95%;
@@ -51,12 +48,6 @@ section {
     margin-bottom: 25px;
     font-weight: 600;
 }
-span {
-    color: #fcf;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
-}
 .rb-button {
     background-color: rgb(9, 142, 29);
     color: white;
@@ -70,14 +61,4 @@ span {
     background-color:rgb(34, 36, 196);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
-}
-
-.navbar-toggler, .text-bg-dark{
-    height: 40px;
-    align-items: center;
-}
-@media screen and(max-width: 768px){
-    .navbar-brand img {
-     
-    }
 }

@@ -1,11 +1,9 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans',sans-serif;
 }
-body {
-    background-color: rgb(119, 219, 186);
+.rb-table {
+    background-color: rgb(159, 233, 208);
     width: 100%;
     min-height: 100vh;
     position: relative;

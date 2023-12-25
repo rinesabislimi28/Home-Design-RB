@@ -1,7 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Open Sans',sans-serif;
     box-sizing: border-box;
 }
 /*Section*/
@@ -34,9 +32,6 @@ section {
     cursor: pointer;
     transition: 0.5s;
 }
-
-
-
 .rb-btn .rb-play::before {
     content: '';
     position: absolute;
@@ -46,11 +41,9 @@ section {
     border-bottom: 15px solid transparent;
     transform: translateX(5px);
 }
-
 .rb-play.hide-button:before {
     content: none;
 }
-
 .rb-play.hide-button {
     background: rgb(152, 221, 157);
 }
@@ -100,9 +93,4 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     color: white;
-}
-@media(max-width: 810){
-    .rb-video video {
-        width: 60%;
-    }
 }

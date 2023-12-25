@@ -16,11 +16,10 @@
    padding: 10px;
 
 }
-table, tr,th, td {
+table, tr, td, th {
     border: 1px solid black !important;
     border-collapse: collapse;
-  }
-
+}
 table {
     width: 100%;
 }

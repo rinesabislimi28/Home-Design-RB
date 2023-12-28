@@ -6,3 +6,11 @@
     font-size: 20px;
     font-weight: 700;
 }
+@media only screen and (max-width: 567px){
+    .rb-section {
+        font-size: 50%;
+        font-weight: 700;
+        background-color: rgb(100, 96, 96);
+        color: black;
+    }
+}

@@ -18,6 +18,11 @@
     margin:15px;
     box-shadow: 8px 5px rgb(34, 48, 34);
 }
+.rb-card:hover {
+    cursor: pointer;
+    transform: translateY(-10px); 
+    transition: all ease 0.5s;
+}
 .rb-card img {
     width: 100%;
     height: auto;

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif ;
+    font-family: 'Open Sans', sans-serif;
 }
 #rb-section {
     background-color: rgb(233, 115, 115);
@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
+    position: center;
 }
 .rb-group .rb-section-text {
     color: rgb(11, 5, 17);
@@ -41,7 +42,7 @@
     height: 8%;
     border-radius: 90%;
     right: calc(100% + 5%);
-    top: 0;
+    margin-top: -5%;
     background-color: rgb(224, 205, 207);
     border: 1px solid rgb(17, 17, 17);
 }
@@ -60,7 +61,16 @@
     .rb-main {
         grid-template-columns: 1fr;
     }
-    .rb-main .rb-group:nth-child(2) {
-        margin-top: 30px;
+    .rb-main .rb-group:nth-child(4) {
+        margin-top: 20px;
+    }
+    .rb-box::before {
+        margin: -4% -2% 0% 0%;
+    }
+}
+@media (max-width: 576px){
+    .rb-box::before {
+        margin: -5% 3% 0% 0%;
+        top: -1%;
     }
 }

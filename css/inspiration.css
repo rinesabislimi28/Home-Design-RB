@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+#rb-home-design {
+    background-color: rgb(190, 190, 238);
+}
+/*Section*/
+.rb-heading-p, .rb-heading {
+    text-align: center;
+    text-shadow: 1px 1px salmon;
+    color: black;
+}
+.rb-heading-p {
+    margin-top: 15%;
+    font-weight: 500;
+    font-size: 18px;
+}
+.rb-heading-p:hover {
+    color: red;
+    text-decoration: overline;
+}
+.rb-heading:hover {
+    transform: scale(0.6);
+    color: rgb(7, 36, 117);
+}
+.rb-experience-box {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 8px;
+    text-align: center;
+}
+.rb-experience-box h2 {
+    margin-bottom: 2rem;
+}
+.rb-experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.rb-ex-div a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+.rb-experience-container {
+    text-align: left;
+}
+.rb-ex-div h4 p {
+    display: flex;
+    flex-direction: column;
+}

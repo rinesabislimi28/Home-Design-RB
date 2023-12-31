@@ -3,16 +3,23 @@
     font-family: 'Open Sans', sans-serif;
 }
 #rb-home-design {
-    background-color: rgb(190, 190, 238);
+    background-color: rgb(147, 191, 211);
 }
 /*Section*/
+.container.rb-experience-container{
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+}
 .rb-heading-p, .rb-heading {
     text-align: center;
-    text-shadow: 1px 1px salmon;
-    color: black;
+    text-shadow: 1px 1px rgb(82, 130, 233);
+    color: rgb(253, 249, 249);
 }
 .rb-heading-p {
-    margin-top: 15%;
+    margin-top: 3%;
     font-weight: 500;
     font-size: 18px;
 }
@@ -20,32 +27,32 @@
     color: red;
     text-decoration: overline;
 }
+.rb-link-experience {
+    text-decoration: none;
+}
 .rb-heading:hover {
     transform: scale(0.6);
     color: rgb(7, 36, 117);
 }
 .rb-experience-box {
     border: 1px solid black;
-    border-radius: 5%;
-    padding: 8px;
+    border-radius: 4%;
+    padding: 5%;
+    text-align: justify;
+    background-color: #e5f8f8;
+}
+.rb-experience-box h4 {
+    margin-bottom: 2rem;
     text-align: center;
 }
-.rb-experience-box h2 {
-    margin-bottom: 2rem;
-}
-.rb-experience {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.rb-ex-div a{
-    text-decoration: none;
+.rb-checkbox {
+    text-align: center;
     color: black;
-    padding: 20px;
 }
-.rb-experience-container {
-    text-align: left;
+.rb-form-check-input {
+    color: black;
 }
-.rb-ex-div h4 p {
-    display: flex;
-    flex-direction: column;
+/*Class that adds js*/
+.rb-checked {
+    color: rgb(255, 15, 47);
 }

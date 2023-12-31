@@ -1,4 +1,5 @@
-    document.addEventListener('DOMContentLoaded', function() {
+   //Eyes icon
+   document.addEventListener('DOMContentLoaded', function() {
         const pwIcon = document.querySelector('.rb-eyes-icon');
         const pwField = document.querySelector('.rb-password');
 

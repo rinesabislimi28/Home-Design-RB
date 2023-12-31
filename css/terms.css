@@ -3,7 +3,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 #rb-section {
-    background-color: rgb(233, 115, 115);
+    background-color: rgb(235, 229, 229);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,9 +68,9 @@
         margin: -4% -2% 0% 0%;
     }
 }
-@media (max-width: 576px){
+@media only screen and (max-width: 576px){
     .rb-box::before {
         margin: -5% 3% 0% 0%;
-        top: -1%;
+        top: 0;
     }
 }

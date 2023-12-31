@@ -38,15 +38,15 @@ form .rb-field {
     top: 50%;
     right: 10px;
 }
-.rb-field button {
+.rb-field .rb-btn {
     background-color: rgb(8, 135, 167);
     color: white;
 }
-.rb-field button:hover {
+.rb-field .rb-btn:hover {
     background-color:rgb(10, 41, 143);
     color: rgb(255, 247, 247);   
 }
-.rb-field  input ,.rb-field button {
+.rb-field  input ,.rb-field .rb-btn {
     font-weight: 500;
     font-size: 17px;
     height: 100%;
@@ -74,4 +74,3 @@ form .rb-field {
     color: red;
     text-decoration: underline;
 }
-

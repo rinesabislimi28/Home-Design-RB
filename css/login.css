@@ -52,7 +52,7 @@ form .rb-field {
     height: 100%;
     width: 100%;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 3%;
 }
 .rb-field input{
     border: 1px solid black;
@@ -60,7 +60,7 @@ form .rb-field {
 }
 .rb-form-link {
     text-align: right;
-    margin-top: 10px;
+    margin-top: 2%;
 }
 .rb-form-link p {
     text-align: center;

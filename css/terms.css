@@ -2,11 +2,9 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+/*Section*/
 #rb-section {
     background-color: rgb(235, 229, 229);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .rb-main {
     display: grid;
@@ -19,7 +17,7 @@
     padding: 0px 0px 20px 30px;
 }
 .rb-group .rb-content {
-    padding: 0px 30px;
+    padding: 0px 20px;
     border-left: 2px solid rgb(13, 2, 31);
 }
 .rb-group .rb-content .rb-box {
@@ -38,13 +36,17 @@
 .rb-group .rb-content .rb-box::before {
     content: "";
     position: absolute;
-    width: 4%;
+    width: 3%;
     height: 8%;
     border-radius: 90%;
     right: calc(100% + 5%);
     margin-top: -5%;
     background-color: rgb(224, 205, 207);
     border: 1px solid rgb(17, 17, 17);
+}
+.rb-box::before {
+    margin: 0% 1.5%;
+    top: 0;
 }
 .rb-box h3 {
     font-size: 20px;
@@ -57,7 +59,7 @@
     line-height: 1.0;
     font-size: 16px;
 }
-@media (max-width: 768px){
+@media only screen and (max-width: 768px){
     .rb-main {
         grid-template-columns: 1fr;
     }
@@ -65,10 +67,10 @@
         margin-top: 20px;
     }
     .rb-box::before {
-        margin: -4% -2% 0% 0%;
+        margin: -4% -213% 0% 0%;
     }
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 567px){
     .rb-box::before {
         margin: -5% 3% 0% 0%;
         top: 0;

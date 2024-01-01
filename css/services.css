@@ -2,19 +2,22 @@
     box-sizing: border-box;
     font-family: 'Open Sans',sans-serif;
 }
-.carousel-item h5 p {
+/*Section*/
+.rb-carousel-item h5 p {
     font-size: 20px;
     font-weight: 700;
 }
 .rb-section {
-    background-color:rgb(230, 225, 225);
-}
-.rb-section p {
+    background-color:rgb(235, 229, 229);
     text-align: justify;
+    padding: 1%;
+}
+h5.rb-section {
+    text-align: center;
 }
 @media only screen and (max-width: 567px){
     .rb-section {
-        font-size: 40%;
+        font-size: 35%;
         font-weight: 700;
         background-color: rgb(248, 247, 247);
         color: black;

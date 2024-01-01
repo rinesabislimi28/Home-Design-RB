@@ -2,8 +2,11 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-#rb-home-design {
-    background-color: rgb(147, 191, 211);
+.rb-section-experience  {
+    background-color: rgb(136, 158, 168);
+    width: 100%;
+    height: 90%;
+    padding-bottom: 5%;
 }
 /*Section*/
 .container.rb-experience-container{
@@ -19,7 +22,7 @@
     color: rgb(253, 249, 249);
 }
 .rb-heading-p {
-    margin-top: 3%;
+    padding-top: 4%;
     font-weight: 500;
     font-size: 18px;
 }

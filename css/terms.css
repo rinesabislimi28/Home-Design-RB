@@ -40,9 +40,12 @@
     height: 8%;
     border-radius: 90%;
     right: calc(100% + 5%);
-    margin-top: -5%;
+    margin-top: -6%;
     background-color: rgb(224, 205, 207);
     border: 1px solid rgb(17, 17, 17);
+    margin-right: -2.3%;
+    top: 10%;
+
 }
 .rb-box::before {
     margin: 0% 1.5%;
@@ -67,7 +70,7 @@
         margin-top: 20px;
     }
     .rb-box::before {
-        margin: -4% -213% 0% 0%;
+        margin: -4% -5% 0% 0%;
     }
 }
 @media only screen and (max-width: 567px){

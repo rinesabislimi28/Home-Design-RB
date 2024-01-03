@@ -3,13 +3,17 @@
     box-sizing: border-box;
 } 
 /*Section switch checkbox */
+.rb-section-history {
+    background-color: #e2eecf;
+}
 .rb-switch {
    position: relative;
    display: inline-block;
    width: 5%;
    height: 15%;
-   position: center;
-   margin-top: 3%;
+   margin: 4%;
+   margin-left: 50%;
+   text-align: center;
 }
 .rb-switch #rb-checkbox {
     opacity: 0;
@@ -39,12 +43,12 @@
     transition: .4s;
 }
 #rb-checkbox:checked + .rb-slider {
-    background-color: rgb(62, 240, 39);
+    background-color: rgb(166, 175, 165);
 }
 #rb-checkbox:checked + .rb-slider:before {
     -webkit-transform: translateX(40px);
     -ms-transform: translateX(40px);
-    transform: translateX(40px);
+    transform: translateX(10px);
 }
 /*Cards*/
 .rb-section-history {

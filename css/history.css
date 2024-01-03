@@ -2,7 +2,51 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 } 
-/*Section*/
+/*Section switch checkbox */
+.rb-switch {
+   position: relative;
+   display: inline-block;
+   width: 5%;
+   height: 15%;
+   position: center;
+   margin-top: 3%;
+}
+.rb-switch #rb-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.rb-slider {
+    position: absolute;
+    cursor: pointer;
+    top: -20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(243, 243, 243);
+    transition: .4s;
+    border-radius: 30%;
+}
+.rb-slider::before {
+    position: absolute;
+    content: "";
+    height: 70%;
+    width: 30%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 100%;
+    transition: .4s;
+}
+#rb-checkbox:checked + .rb-slider {
+    background-color: rgb(62, 240, 39);
+}
+#rb-checkbox:checked + .rb-slider:before {
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+}
+/*Cards*/
 .rb-section-history {
     background-color: #e2eecf;
 }

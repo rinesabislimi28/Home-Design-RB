@@ -43,8 +43,8 @@
     margin-top: -6%;
     background-color: rgb(224, 205, 207);
     border: 1px solid rgb(17, 17, 17);
-    margin-right: -2.3%;
-    top: 10%;
+    margin-right: -2.8%;
+    top: 20%;
 
 }
 .rb-box::before {
@@ -71,6 +71,26 @@
     }
     .rb-box::before {
         margin: -4% -5% 0% 0%;
+    }
+    
+   .rb-box::before {
+    margin: 0% 1.5%;
+    top: 0;
+    }
+}
+@media only screen and (max-width: 567px){
+    .rb-group .rb-content .rb-box::before {
+        content: '';
+        position: absolute;
+        width: 3%;
+        height: 8%;
+        border-radius: 90%;
+        right: calc(100%+5%);
+        margin-top: -8%;
+        background-color: white;
+        border: 1px solid rgb(2, 8, 0);
+        margin-right: -0.9%;
+        top: 10%;
     }
 }
 @media only screen and (max-width: 400px){

@@ -73,7 +73,7 @@
         margin: -4% -5% 0% 0%;
     }
 }
-@media only screen and (max-width: 567px){
+@media only screen and (max-width: 400px){
     .rb-box::before {
         margin: -5% 3% 0% 0%;
         top: 0;

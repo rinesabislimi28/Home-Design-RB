@@ -15,14 +15,20 @@ section::after {
     z-index: -1;
     filter: blur(50px);
 }
-.rb-section-contain h1 {
-    color: azure;
+.rb-section-contain .rb-btn h1  {
+    color: rgb(0, 0, 0);
     height: 60vh;
-    margin-left: 10%;
-    margin-top: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+}
+.rb-group {
+    text-align: center;
+    margin: 50% 10%;
+}
+.rb-btn:hover {
+    box-shadow: 2px 5px #a08018;
+}
+.rb-btn a {
+    color: white;
+    text-decoration: none;
 }
 .rb-section-contain img {
     object-fit: cover;
@@ -33,33 +39,25 @@ section::after {
     border-radius: 3%;
 }
 .rb-section-contain h1:hover {
-    color: rgba(0, 0, 0, 0.793);
+    color: rgba(236, 202, 48, 0.793);
     transition: .5s ease;
     transform: rotate(360deg);
 }
 .rb-section-contain img:hover {
     border: 3px solid rgb(1, 20, 43);
     border-radius: 15%;
-    box-shadow: 2px 4px rgb(207, 50, 11);
-}
-.rb-class::after {
-    
-    display: inline-block;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0;
-    border-left: 0.3em solid transparent;
+    box-shadow: 2px 4px #cf320b;
 }
 @media only screen and (max-width: 576px){
     .rb-section-contain h1 {
-        color: rgb(110, 67, 1);
-        font-weight: bold;
+        color: rgba(233, 37, 11, 0.644);
+        font-weight: 700;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .rb-group {
+        margin: 70% 10% 50% 10%;
     }
     section::after{
         content: '';
@@ -71,6 +69,9 @@ section::after {
         background: url(../fotot/index-image.jpg);
         background-size: cover;
         z-index: -1;
-        filter: blur(70px);
+        filter: blur(530px);
+    }
+    .rb-section-contain h1:hover {
+        transform: rotate(360deg);
     }
 }

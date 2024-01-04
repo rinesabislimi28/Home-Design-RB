@@ -9,6 +9,7 @@ section {
 .rb-container {
     padding-top: 10px;
 }
+/*Design for the "about" page*/
 .rb-about {
     background-color: rgb(81, 123, 151);
 }
@@ -48,6 +49,7 @@ section {
     margin-bottom: 25px;
     font-weight: 600;
 }
+/*Button*/
 .rb-button {
     background-color: rgb(9, 142, 29);
     color: white;

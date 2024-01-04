@@ -1,6 +1,6 @@
 * {
-    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 } 
 /*Section switch checkbox */
 .rb-section-history {
@@ -27,30 +27,30 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(128, 118, 118);
     transition: .4s;
-    border-radius: 30%;
+    border-radius: 20%;
 }
 .rb-slider::before {
     position: absolute;
     content: "";
     height: 70%;
     width: 30%;
-    left: 4px;
-    bottom: 4px;
+    left: 1.5px;
+    bottom: 5px;
     background-color: white;
     border-radius: 100%;
     transition: .4s;
 }
 #rb-checkbox:checked + .rb-slider {
-    background-color: rgb(166, 175, 165);
+    background-color: rgb(138, 143, 137);
 }
 #rb-checkbox:checked + .rb-slider:before {
     -webkit-transform: translateX(40px);
     -ms-transform: translateX(40px);
-    transform: translateX(10px);
+    transform: translateX(30px);
 }
-/*Cards*/
+/*Design of cards*/
 .rb-section-history {
     background-color: #e2eecf;
 }
@@ -109,4 +109,33 @@
 button a {
     text-decoration:none;
     color: white;
+}
+/*Only for large devices*/
+@media only screen and (max-width: 768px){
+    .rb-slider::before {
+        left: 2px;
+    }
+    #rb-checkbox:checked + .rb-slider:before {
+        transform: translate(20px);
+    }
+}
+/*Only for medium devices*/
+@media only screen and (max-width: 567px){
+    #rb-checkbox:checked + .rb-slider:before {
+        transform: translate(17px);
+    }
+}
+/*Only for small devices*/
+@media only screen and (max-width: 375px){
+    .rb-switch {
+        width: 15%;
+        padding: 2%;
+    }
+    .rb-slider::before {
+        left: 2px;
+        bottom: 4px;
+    }
+    #rb-checkbox:checked + .rb-slider:before  {
+        transform: translate(35px);
+    }
 }

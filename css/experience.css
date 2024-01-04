@@ -2,14 +2,15 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+/*Section*/
 .rb-section-experience  {
     background-color: rgb(136, 158, 168);
     width: 100%;
     height: 90%;
     padding-bottom: 5%;
 }
-/*Section*/
-.container.rb-experience-container{
+/*Section content design*/
+.container.rb-experience-container {
     margin-bottom: 8%;
     display: flex;
     justify-content: center;
@@ -55,7 +56,7 @@
 .rb-form-check-input {
     color: black;
 }
-/*Class that adds js*/
+/*Class that was added to js that the changed color is red*/
 .rb-checked {
     color: rgb(255, 15, 47);
 }

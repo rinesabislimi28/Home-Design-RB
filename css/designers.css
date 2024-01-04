@@ -7,10 +7,12 @@ section {
     background-color: rgb(0, 0, 0);
     color: white;
 }
+/*Heading for table*/
 h1 {
     text-align: center;
     padding: 5px;
 }
+/*Table design*/
 .rb-table {
     background-color: rgb(185, 192, 188);
     width: 100%;
@@ -49,10 +51,12 @@ td span a:hover{
     text-decoration: overline;
     color: rgb(41, 241, 22);
 }
-@media (max-width: 567px){
+/*Only for medium devices*/
+@media (max-width: 567px) {
+    /*Hide table thead on small devices with display*/
     thead {
        display: none;
-   }
+    }
    .rb-table, tbody, tr, td {
        display: block;
     }
@@ -64,6 +68,7 @@ td span a:hover{
         justify-content: center;
         align-items: center;
     }
+    /*When the table is too narrow the code is used to display all columns in one row*/
     td::before {
         content: attr(data-label);
         position: absolute;
@@ -87,6 +92,7 @@ td span a:hover{
         color: black;
         text-align: justify;
     }
+    /*Color of job links for better visibility*/
     .rb-job {
         color: black;
     }

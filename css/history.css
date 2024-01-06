@@ -2,6 +2,34 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 } 
+/*Header*/
+.rb-navbar-icon {
+    width: auto;
+    height: 80px;
+}
+.rb-index-menu , .rb-about {
+    text-decoration: none;
+    color: black;
+    margin: 5%;
+}
+.rb-nav-link:hover {
+   background-color: rgb(245, 236, 224);
+   padding: 4%;
+}
+.rb-home-menu, .rb-about-menu {
+    margin-left: -30%
+}
+.col {
+    padding: 3%;
+    margin: -2%;
+    font-size: 16px;
+}
+.rb-nav-item {
+    padding: 3px;
+}
+.dropdown-toggle {
+    margin-left: -55%;
+}
 /*Section switch checkbox */
 .rb-section-history {
     background-color: #dfe0dc;
@@ -109,7 +137,22 @@ button a {
     color: white;
 }
 /*Only for large devices*/
+@media only screen and (max-width: 1440px){
+    #rb-checkbox:checked + .rb-slider:before {
+        transform: translateX(47px);
+    }
+}
+@media only screen and (max-width: 1024px){
+    #rb-checkbox:checked + .rb-slider:before {
+        transform: translateX(35px);
+    }
+}
+/*Only for small devices(phones)*/
 @media only screen and (max-width: 768px){
+    /*Header navbar menu*/
+    .rb-home-menu, .rb-about-menu {
+        margin-left: -50%;
+    }
     .rb-switch {
         width: 8%;
         padding: 2%;
@@ -123,7 +166,6 @@ button a {
         transform: translate(37px);
     }
 }
-/*Only for medium devices*/
 @media only screen and (max-width: 567px){
     .rb-switch {
         width: 10%;
@@ -135,11 +177,20 @@ button a {
         bottom: 5px;
     }
     #rb-checkbox:checked + .rb-slider:before {
-        transform: translateX(32px);
+        transform: translateX(30px);
     }
 }
-/*Only for small devices*/
+@media only screen and (max-width: 430px){
+    #rb-checkbox:checked + .rb-slider:before {
+        transform: translateX(25px);
+    }
+}
 @media only screen and (max-width: 375px){
+    /*Header*/
+    .rb-about-menu, .rb-home-menu {
+        margin-left: -15%;
+    }
+    /*Section about button on/off*/
     .rb-switch {
         width: 12%;
         padding: 2%;
@@ -149,7 +200,7 @@ button a {
         left: 2px;
         bottom: 4px;
     }
-    #rb-checkbox:checked + .rb-slider:before  {
-        transform: translateX(27px);
+    #rb-checkbox:checked + .rb-slider:before {
+        transform: translateX(25px);
     }
 }

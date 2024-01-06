@@ -2,6 +2,34 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+/*Header*/
+.rb-navbar-icon {
+    width: auto;
+    height: 80px;
+}
+.rb-index-menu , .rb-about {
+    text-decoration: none;
+    color: black;
+    margin: 5%;
+}
+.rb-nav-link:hover {
+   background-color: rgb(245, 236, 224);
+   padding: 4%;
+}
+.rb-home-menu, .rb-about-menu {
+    margin-left: -30%
+}
+.col {
+    padding: 3%;
+    margin: -2%;
+    font-size: 16px;
+}
+.rb-nav-item {
+    padding: 3px;
+}
+.dropdown-toggle {
+    margin-left: -55%;
+}
 /*Section*/
 .rb-section-experience  {
     background-color: rgb(136, 158, 168);
@@ -59,4 +87,17 @@
 /*Class that was added to js that the changed color is red*/
 .rb-checked {
     color: rgb(255, 15, 47);
+}
+/* Only for small devices(phones) */
+@media only screen and (max-width: 768px){
+    /*Header navbar menu*/
+    .rb-home-menu, .rb-about-menu {
+        margin-left: -50%;
+    }
+}
+/*Header for small devices */
+@media only screen and (max-width: 375px){
+    .rb-about-menu, .rb-home-menu {
+        margin-left: -15%;
+    }
 }

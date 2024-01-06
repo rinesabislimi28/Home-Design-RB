@@ -2,17 +2,22 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+/*Header*/
+.rb-navbar-icon {
+    width: auto;
+    height: 80px;
+}
 .rb-index-menu , .rb-about {
     text-decoration: none;
     color: black;
     margin: 5%;
 }
 .rb-nav-link:hover {
-   background-color: rgb(233, 217, 194);
+   background-color: rgb(245, 236, 224);
    padding: 4%;
 }
 .rb-home-menu, .rb-about-menu {
-    margin-left: -50%
+    margin-left: -30%
 }
 .col {
     padding: 3%;
@@ -21,6 +26,9 @@
 }
 .rb-nav-item {
     padding: 3px;
+}
+.dropdown-toggle {
+    margin-left: -55%;
 }
 /*Section*/
 section::after {
@@ -34,10 +42,6 @@ section::after {
     background-size: cover;
     z-index: -1;
     filter: blur(50px);
-}
-.rb-navbar-icon {
-    width: auto;
-    height: 80px;
 }
 .rb-section-contain .rb-btn h1  {
     color: rgb(0, 0, 0);
@@ -72,10 +76,13 @@ section::after {
     border-radius: 15%;
     box-shadow: 2px 4px #cf320b;
 }
+/* Only for small devices(phones) */
 @media only screen and (max-width: 768px){
+    /*Header navbar menu*/
     .rb-home-menu, .rb-about-menu {
-        margin-left: -68%;
+        margin-left: -50%;
     }
+    /*Section*/
     section {
         background-color: rgb(231, 211, 168);
     }
@@ -94,5 +101,11 @@ section::after {
     }
     .rb-section-contain h1:hover {
         transform: rotate(360deg);
+    }
+}
+/*Header for small devices */
+@media only screen and (max-width: 375px){
+    .rb-about-menu, .rb-home-menu {
+        margin-left: -15%;
     }
 }

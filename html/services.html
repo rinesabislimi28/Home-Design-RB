@@ -17,9 +17,8 @@
   <header class="sticky-top">
     <nav class="navbar navbar-dark bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../html/index.html"><img src="../fotot/navbar-icon.jpg"></a>
-        <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../html/index.html"><img src="../fotot/navbar-icon.jpg" class="rb-navbar-icon"></a>
+        <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -30,31 +29,45 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="rb-nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <div class="row rb-nav-link">
+                  <div class="col">
+                    <a href="../index.html" class="rb-index-menu"><i class="fa-solid fa-house"></i> Home</a>
+                  </div>
+                  <div class="col">
+                    <a href="#" class="nav-link text-dark dropdown-toggle d-flex align-items-center rb-home-menu" data-bs-toggle="dropdown"></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../html/video.html"><i class="fa-solid fa-file-video"></i> Video</a></li>
+                    </ul>
+                  </div>  
+                </div>
+              </li>
+              <li class="rb-nav-item"> 
+                <div class="row rb-nav-link">
+                  <div class="col">
+                    <a href="../html/about.html" class="rb-about"><i class="fa-solid fa-user"></i> About </a>
+                  </div>
+                  <div class="col">
+                    <a href="#" class="nav-link text-dark dropdown-toggle d-flex align-items-center rb-about-menu" data-bs-toggle="dropdown"></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../html/history.html"><i class="fa-solid fa-clock-rotate-left"></i> History </a></li>
+                      <li><a class="dropdown-item" href="../html/designers.html"><i class="fa-solid fa-table"></i> Designers</a></li>
+                      <li><a class="dropdown-item" href="../html/experience.html"><i class="fa-solid fa-lightbulb"></i> Experience</a></li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li class="rb-nav-item">
-                <a class="nav-link text-dark" href="../html/about.html"><i class="fa-solid fa-user"></i> About</a>
+                <a class="rb-nav-link nav-link text-dark" href="../html/services.html"><i class="fa-solid fa-paint-roller"></i> Services</a></li>
               </li>
               <li class="rb-nav-item">
-                <a class="nav-link text-dark" href="../html/services.html"><i class="fa-solid fa-paint-roller"></i> Services</a></li>
-              </li>
-              <li class="rb-nav-item">
-                <a class="nav-link text-dark" href="../html/terms.html"><i class="fa-regular fa-clipboard"></i> Terms</a></li>
+                <a class="rb-nav-link nav-link text-dark" href="../html/terms.html"><i class="fa-regular fa-clipboard"></i> Terms</a></li>
               </li> 
               <li class="rb-nav-item">
-                <a class="nav-link text-dark" href="../html/inspiration.html"><i class="fa-solid fa-lightbulb"></i> Inspiration</a></li>
-              </li> 
-              <li class="rb-nav-item">
-                <a class="nav-link text-dark dropdown-toggle" href="#" data-bs-toggle="dropdown">  Treeview menu  </a>
-                <ul class="dropdown-menu">
-                  <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
-                  <li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a></li>
-                  <li> <a class="nav-link text-dark" href="../html/contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>                </li>
-                </ul>
+                <a class="rb-nav-link nav-link text-dark" href="../html/contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
               </li> 
               <li class="rb-nav-item"> 
-                <a class="nav-link text-dark" href="../html/login.html"><i class="fa-regular fa-user"></i> Login</a></li>
-              </li>
+                <a class="rb-nav-link nav-link text-dark" href="../html/login.html"><i class="fa-regular fa-user"></i> Login</a></li>
+              </li> 
             </ul>
           </div>
         </div>

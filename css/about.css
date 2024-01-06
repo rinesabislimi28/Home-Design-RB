@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 /*Header*/
 .rb-navbar-icon {
     width: auto;
@@ -94,7 +95,7 @@ section {
 }
 @media only screen and (max-width: 768px){
     /*Header navbar menu*/
-    .rb-home-menu, .rb-about-menu {
+    .rb-about-menu, .rb-home-menu {
         margin-left: -50%;
     }
 }

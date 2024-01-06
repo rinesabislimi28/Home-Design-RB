@@ -106,6 +106,6 @@ section::after {
 /*Header for small devices */
 @media only screen and (max-width: 375px){
     .rb-about-menu, .rb-home-menu {
-        margin-left: -15%;
+        margin-left: -20%;
     }
 }

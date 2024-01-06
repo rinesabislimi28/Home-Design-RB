@@ -3,6 +3,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 /*Section*/
+.rb-navbar-icon {
+    width: 80%;
+    height: 80px;
+}
 section {
     padding: 25px 0;
 }

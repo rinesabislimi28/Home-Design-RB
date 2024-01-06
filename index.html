@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="icon" href="./fotot/navbar-icon.jpg">
+  <link rel="icon" href="./fotot/index-icon.jpg">
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <script src="./js/index.js" defer></script>
   <script src="./bootstrap/js/bootstrap.bundle.min.js"defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
@@ -17,8 +18,8 @@
   <header class="sticky-top">
     <nav class="navbar navbar-dark bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><img src="./fotot/foto1.jpg"></a>
-        <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="./index.html"><img src="./fotot/navbar-icon.jpg" class="rb-navbar-icon"></a>
+        <button class="navbar-toggler text-bg-dark" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -29,35 +30,47 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="rb-nav-item">
-                <a class="nav-link active text-dark dropdown-toggle" href="./index.html" data-bs-toggle="dropdown" aria-expanded="false" role="button" ><i class="fa-solid fa-house"></i> Home</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./html/video.html"><i class="fa-solid fa-file-video"></i> Video</a></li>
-                </ul>
+                <div class="row rb-nav-link">
+                  <div class="col">
+                    <a href="./index.html" class="rb-index-menu"><i class="fa-solid fa-house"></i> Home</a>
+                  </div>
+                  <div class="col">
+                    <a href="#" class="nav-link text-dark dropdown-toggle d-flex align-items-center rb-home-menu" data-bs-toggle="dropdown"></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./html/video.html"><i class="fa-solid fa-file-video"></i> Video</a></li>
+                    </ul>
+                  </div>  
+                </div>
               </li>
-              <div class="indicators" id="indicators">Home</div>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="./html/about.html" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user"></i> About</a>
-              </li>
-              <li class="nav-item">
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./html/history.html"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
-                  <li><a class="dropdown-item" href="./html/designers.html"><i class="fa-solid fa-table"></i> Designers</a></li>
-                  <li><a class="dropdown-item" href="./html/experience.html"><i class="fa-solid fa-lightbulb"></i> Experience</a></li>
-                </ul>
+
+              <li class="rb-nav-item"> 
+                <div class="row rb-nav-link">
+                  <div class="col">
+                    <a href="./html/about.html" class="rb-about"><i class="fa-solid fa-user"></i> About </a>
+                  </div>
+                  <div class="col">
+                    <a href="#" class="nav-link text-dark dropdown-toggle d-flex align-items-center rb-about-menu" data-bs-toggle="dropdown"></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./html/history.html"><i class="fa-solid fa-clock-rotate-left"></i> History </a></li>
+                      <li><a class="dropdown-item" href="./html/designers.html"><i class="fa-solid fa-table"></i> Table</a></li>
+                      <li><a class="dropdown-item" href="./html/experience.html"><i class="fa-solid fa-lightbulb"></i> Experience</a></li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li class="rb-nav-item">
-                <a class="nav-link text-dark" href="./html/services.html"><i class="fa-solid fa-paint-roller"></i> Services</a></li>
+                <a class="rb-nav-link nav-link text-dark" href="./html/services.html"><i class="fa-solid fa-paint-roller"></i> Services</a></li>
               </li>
               <li class="rb-nav-item">
-                <a class="nav-link text-dark" href="./html/terms.html"><i class="fa-regular fa-clipboard"></i> Terms</a></li>
+                <a class="rb-nav-link nav-link text-dark" href="./html/terms.html"><i class="fa-regular fa-clipboard"></i> Terms</a></li>
               </li> 
               <li class="rb-nav-item">
-                <a class="nav-link text-dark" href="./html/contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                <a class="rb-nav-link nav-link text-dark" href="./html/contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
               </li> 
               <li class="rb-nav-item"> 
-                <a class="nav-link text-dark" href="./html/login.html"><i class="fa-regular fa-user"></i> Login</a></li>
-              </li>
-            </ul> 
+                <a class="rb-nav-link nav-link text-dark" href="./html/login.html"><i class="fa-regular fa-user"></i> Login</a></li>
+              </li> 
+            </ul>
           </div>
         </div>
       </div>

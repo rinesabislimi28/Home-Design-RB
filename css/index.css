@@ -2,6 +2,26 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+.rb-index-menu , .rb-about {
+    text-decoration: none;
+    color: black;
+    margin: 5%;
+}
+.rb-nav-link:hover {
+   background-color: rgb(233, 217, 194);
+   padding: 4%;
+}
+.rb-home-menu, .rb-about-menu {
+    margin-left: -50%
+}
+.col {
+    padding: 3%;
+    margin: -2%;
+    font-size: 16px;
+}
+.rb-nav-item {
+    padding: 3px;
+}
 /*Section*/
 section::after {
     content: '';
@@ -14,6 +34,10 @@ section::after {
     background-size: cover;
     z-index: -1;
     filter: blur(50px);
+}
+.rb-navbar-icon {
+    width: auto;
+    height: 80px;
 }
 .rb-section-contain .rb-btn h1  {
     color: rgb(0, 0, 0);
@@ -49,6 +73,9 @@ section::after {
     box-shadow: 2px 4px #cf320b;
 }
 @media only screen and (max-width: 768px){
+    .rb-home-menu, .rb-about-menu {
+        margin-left: -68%;
+    }
     section {
         background-color: rgb(231, 211, 168);
     }

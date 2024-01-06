@@ -4,7 +4,7 @@
 }
 /*Section*/
 .rb-login  {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color:#a3dde6;
     display: flex;
@@ -15,7 +15,7 @@
     background-color: white;
     border: 2px solid black;
     border-radius: 8%;
-    max-width: 450px;
+    max-width: 440px;
     padding: 5%;
     margin:0 auto;
 }
@@ -31,7 +31,8 @@ form .rb-field {
     width: 100%;
     margin-top: 8%;
 }
-.rb-eyes-icon{
+/*Eyes icon*/
+.rb-eyes-icon {
     position: absolute;
     transform: translateY(-50%);
     color: rgb(87, 87, 87);
@@ -46,6 +47,10 @@ form .rb-field {
     background-color:rgb(10, 41, 143);
     color: rgb(255, 247, 247);   
 }
+.rb-field input {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
 .rb-field  input ,.rb-field .rb-btn {
     font-weight: 500;
     font-size: 17px;
@@ -53,10 +58,6 @@ form .rb-field {
     width: 100%;
     border: 1px solid black;
     border-radius: 3%;
-}
-.rb-field input{
-    border: 1px solid black;
-    padding: 10px 15px;
 }
 .rb-form-link {
     text-align: right;
@@ -73,4 +74,10 @@ form .rb-field {
 .rb-form a:hover {
     color: red;
     text-decoration: underline;
+}
+/*Only for small devices (phones)*/
+@media only screen and (min-width: 768px){
+    .rb-login {
+        height: 100vh;
+    }
 }

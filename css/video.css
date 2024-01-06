@@ -3,12 +3,13 @@
     box-sizing: border-box;
 }
 /*Section*/
-section {
+#rb-video-section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+/*Button to go in the video*/
 .rb-btn {
     position: relative;
     cursor: pointer;
@@ -41,11 +42,13 @@ section {
     border-bottom: 15px solid transparent;
     transform: translateX(5px);
 }
-.rb-play.hide-button:before {
-    content: none;
-}
+/*Hide button when video is shown, and background get color*/
 .rb-play.hide-button {
-    background: rgb(152, 221, 157);
+    background-color: rgb(152, 221, 157);
+}
+/*Content before the button remove*/
+.rb-play.hide-button::before {
+    content: none;
 }
 .rb-btn p {
     margin-top: 10px;
@@ -56,6 +59,7 @@ section {
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+/*Design the button to enter the video*/
 .rb-btn.rb-active .rb-play {
     box-shadow: 0 0 0 150vh rgb(152, 221, 157);
 }
@@ -70,10 +74,9 @@ section {
     justify-content: center;
     align-items: center;
     margin: 5px;
-    z-index: 10000;
     transition: 0.5s;
 }
-.rb- .rb-active {
+.rb- rb.active {
     display: none;
 }
 .rb-video.rb-active {
@@ -85,6 +88,7 @@ section {
     border: 7px solid black;
     box-shadow: 0 15px 35px black
 }
+/*Design of button for close the video*/
 .rb-video .rb-close {
     position: absolute;
     top: 30px;

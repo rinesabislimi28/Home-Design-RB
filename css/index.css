@@ -48,7 +48,7 @@ section::after {
     border-radius: 15%;
     box-shadow: 2px 4px #cf320b;
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 768px){
     .rb-section-contain h1 {
         color: rgba(233, 37, 11, 0.644);
         font-weight: 700;

@@ -51,8 +51,8 @@ td span a:hover{
     text-decoration: overline;
     color: rgb(41, 241, 22);
 }
-/*Only for medium devices*/
-@media (max-width: 567px) {
+/*Only for small devices(phones)*/
+@media (max-width: 768px) {
     /*Hide table thead on small devices with display*/
     thead {
        display: none;

@@ -3,53 +3,47 @@
     font-family: 'Open Sans', sans-serif;
 }
 /*Section*/
-#rb-section {
-    background-color: rgb(235, 229, 229);
+#rb-terms-section {
+    background-color: rgb(247, 215, 210);
 }
 .rb-main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 10px;
-    position: center;
 }
 .rb-group .rb-section-text {
     color: rgb(11, 5, 17);
-    padding: 0px 0px 20px 30px;
+    margin: 5% 5% 0% -4%;
+}
+.rb-section-text:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+/*Color of font when is hover*/
+i.rb-font:hover {
+    color: red;
 }
 .rb-group .rb-content {
     padding: 0px 20px;
-    border-left: 2px solid rgb(13, 2, 31);
+    border-left: 3px solid rgb(0, 0, 0);
 }
+/*Design of border color when is hover*/
+.rb-content:hover {
+    border-left-color: red;
+}
+/*Design of content the box*/
 .rb-group .rb-content .rb-box {
-    position: relative;
     padding: 20px;
-    border: 2px solid rgb(1, 30, 31);
+    border: 2px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     transition: all 0.4s;
     margin-bottom: 20px;
     text-align: justify;
 }
+/*Design of box when is hover*/
 .rb-group .rb-content .rb-box:hover {
-    box-shadow: 0px 3px 12px 0px black;
-    border: 1px solid transparent;
-}
-.rb-group .rb-content .rb-box::before {
-    content: "";
-    position: absolute;
-    width: 3%;
-    height: 8%;
-    border-radius: 90%;
-    right: calc(100% + 5%);
-    margin-top: -6%;
-    background-color: rgb(224, 205, 207);
-    border: 1px solid rgb(17, 17, 17);
-    margin-right: -2.8%;
-    top: 20%;
-
-}
-.rb-box::before {
-    margin: 0% 1.5%;
-    top: 0;
+    box-shadow: 0px 3px 12px 0px rgb(241, 46, 46);
+    border: 10px solid transparent;
 }
 .rb-box h3 {
     font-size: 20px;
@@ -57,45 +51,17 @@
     color: rgb(0, 0, 0);
     text-align: center;
 }
-.box p {
+.rb-box p {
     color:rgb(11, 5, 17);
     line-height: 1.0;
     font-size: 16px;
 }
+/*Only for small devices(phones)*/
 @media only screen and (max-width: 768px){
     .rb-main {
         grid-template-columns: 1fr;
     }
-    .rb-main .rb-group:nth-child(4) {
-        margin-top: 20px;
-    }
-    .rb-box::before {
-        margin: -4% -5% 0% 0%;
-    }
-    
-   .rb-box::before {
-    margin: 0% 1.5%;
-    top: 0;
-    }
-}
-@media only screen and (max-width: 567px){
-    .rb-group .rb-content .rb-box::before {
-        content: '';
-        position: absolute;
-        width: 3%;
-        height: 8%;
-        border-radius: 90%;
-        right: calc(100%+5%);
-        margin-top: -8%;
-        background-color: white;
-        border: 1px solid rgb(2, 8, 0);
-        margin-right: -0.9%;
-        top: 10%;
-    }
-}
-@media only screen and (max-width: 400px){
-    .rb-box::before {
-        margin: -5% 3% 0% 0%;
-        top: 0;
+    .rb-group {
+        margin: 5%;
     }
 }

@@ -3,6 +3,9 @@
     font-family: 'Open Sans',sans-serif;
 }
 /*Section*/
+#rb-services-section {
+    background-color: rgb(231, 218, 204);
+}
 .rb-carousel-item h5 p {
     font-size: 20px;
     font-weight: 700;
@@ -15,9 +18,10 @@
 h5.rb-section {
     text-align: center;
 }
-@media only screen and (max-width: 567px){
+/*Only for small devices(phones)*/
+@media only screen and (max-width: 768px){
     .rb-section {
-        font-size: 35%;
+        font-size: 30%;
         font-weight: 700;
         background-color: rgb(248, 247, 247);
         color: black;

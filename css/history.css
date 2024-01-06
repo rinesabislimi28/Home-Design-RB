@@ -4,15 +4,15 @@
 } 
 /*Section switch checkbox */
 .rb-section-history {
-    background-color: #e2eecf;
+    background-color: #dfe0dc;
 }
 .rb-switch {
    position: relative;
    display: inline-block;
-   width: 5%;
+   width: 6%;
    height: 15%;
    margin: 4%;
-   margin-left: 50%;
+   margin-left: 47%;
    text-align: center;
 }
 .rb-switch #rb-checkbox {
@@ -36,8 +36,8 @@
     content: "";
     height: 70%;
     width: 30%;
-    left: 1.5px;
-    bottom: 5px;
+    left: 4px;
+    bottom: 7px;
     background-color: white;
     border-radius: 100%;
     transition: .4s;
@@ -46,9 +46,7 @@
     background-color: rgb(138, 143, 137);
 }
 #rb-checkbox:checked + .rb-slider:before {
-    -webkit-transform: translateX(40px);
-    -ms-transform: translateX(40px);
-    transform: translateX(30px);
+    transform: translateX(50px);
 }
 /*Design of cards*/
 .rb-section-history {
@@ -59,7 +57,7 @@
 }
 .rb-heading-text {
     text-align: center;
-    margin-top: 3%;
+    margin: 2% 0% 2% 0%;
 }
 .rb-card-container {
     display: flex;
@@ -112,30 +110,46 @@ button a {
 }
 /*Only for large devices*/
 @media only screen and (max-width: 768px){
+    .rb-switch {
+        width: 8%;
+        padding: 2%;
+        margin-left: 47%;
+    }
     .rb-slider::before {
-        left: 2px;
+        left: 3px;
+        bottom: 7px;
     }
     #rb-checkbox:checked + .rb-slider:before {
-        transform: translate(20px);
+        transform: translate(37px);
     }
 }
 /*Only for medium devices*/
 @media only screen and (max-width: 567px){
+    .rb-switch {
+        width: 10%;
+        padding: 2%;
+        margin-left: 44%;
+    }
+    .rb-slider::before {
+        left: 3px;
+        bottom: 5px;
+    }
     #rb-checkbox:checked + .rb-slider:before {
-        transform: translate(17px);
+        transform: translateX(32px);
     }
 }
 /*Only for small devices*/
 @media only screen and (max-width: 375px){
     .rb-switch {
-        width: 15%;
+        width: 12%;
         padding: 2%;
+        margin-left: 44%;
     }
     .rb-slider::before {
         left: 2px;
         bottom: 4px;
     }
     #rb-checkbox:checked + .rb-slider:before  {
-        transform: translate(35px);
+        transform: translateX(27px);
     }
 }

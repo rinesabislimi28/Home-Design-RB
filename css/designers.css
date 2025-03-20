@@ -1,45 +1,57 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 /*Header*/
 .rb-navbar-icon {
     width: auto;
     height: 80px;
 }
-.rb-index-menu , .rb-about {
+
+.rb-index-menu,
+.rb-about {
     text-decoration: none;
     color: black;
     margin: 5%;
 }
+
 .rb-nav-link:hover {
-   background-color: rgb(245, 236, 224);
-   padding: 4%;
+    background-color: rgb(245, 236, 224);
+    padding: 4%;
 }
-.rb-home-menu, .rb-about-menu {
+
+.rb-home-menu,
+.rb-about-menu {
     margin-left: -30%
 }
+
 .col {
     padding: 3%;
     margin: -2%;
     font-size: 16px;
 }
+
 .rb-nav-item {
     padding: 3px;
 }
+
 .dropdown-toggle {
     margin-left: -55%;
 }
+
 /*Section*/
 section {
     background-color: rgb(0, 0, 0);
     color: white;
 }
+
 /*Heading for table*/
 h1 {
     text-align: center;
     padding: 5px;
 }
+
 /*Table design*/
 .rb-table {
     background-color: rgb(185, 192, 188);
@@ -50,73 +62,124 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 .rb-content {
-   padding: 10px;
+    padding: 10px;
 }
-table, tr, td, th {
+
+table,
+tr,
+td,
+th {
     border: 1px solid rgb(255, 255, 255) !important;
     border-collapse: collapse;
 }
+
 table {
     width: 90%;
 }
-th, td {
+
+th,
+td {
     margin: 5px;
     padding: 10px;
     color: white;
 }
+
 th {
     background-color: rgb(0, 0, 0);
 }
+
 td {
     background-color: rgb(37, 43, 38);
 }
+
 .rb-job {
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
 }
-td span a:hover{
+
+td span a:hover {
     text-decoration: overline;
     color: rgb(41, 241, 22);
 }
+
+/*Footer*/
+.social-icons-wrapper .fab {
+    font-size: 19px;
+    margin: 4px;
+    color: rgb(244, 229, 229);
+    transition: all 0.5s ease;
+    display: inline;
+}
+
+.social-icons-wrapper a {
+    text-decoration: none;
+}
+
+.social-icons-wrapper .fa-facebook:hover {
+    color: #0f2cd0;
+}
+
+.social-icons-wrapper .fa-instagram:hover {
+    color: rgb(187, 15, 92);
+}
+
+.social-icons-wrapper .fa-github:hover {
+    color: rgb(0, 9, 9);
+    background-color: rgb(255, 255, 255);
+}
+
 /*Only for small devices(phones)*/
 @media (max-width: 768px) {
+
     /*Header navbar menu*/
-    .rb-home-menu, .rb-about-menu {
+    .rb-home-menu,
+    .rb-about-menu {
         margin-left: -50%;
     }
+
     /*Hide table thead on small devices with display*/
     thead {
-       display: none;
+        display: none;
     }
-   .rb-table, tbody, tr, td {
-       display: block;
+
+    .rb-table,
+    tbody,
+    tr,
+    td {
+        display: block;
     }
+
     tr {
         margin-bottom: 20px;
     }
+
     .rb-table {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     /*When the table is too narrow the code is used to display all columns in one row*/
     td::before {
         content: attr(data-label);
         position: absolute;
         left: 0;
-        width:30%;
+        width: 30%;
         text-align: center;
         font-weight: bold;
         margin: 10px;
     }
+
     td {
         padding: 0;
         padding-left: 30%;
         position: relative;
         color: rgb(255, 253, 253);
     }
-    td  span {
+
+    td span {
         display: block;
         width: 100%;
         padding: 10px;
@@ -124,14 +187,18 @@ td span a:hover{
         color: black;
         text-align: justify;
     }
+
     /*Color of job links for better visibility*/
     .rb-job {
         color: black;
     }
 }
+
 /*Header for small devices */
-@media only screen and (max-width: 375px){
-    .rb-about-menu, .rb-home-menu {
+@media only screen and (max-width: 375px) {
+
+    .rb-about-menu,
+    .rb-home-menu {
         margin-left: -15%;
     }
 }

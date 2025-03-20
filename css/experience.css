@@ -2,41 +2,52 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 /*Header*/
 .rb-navbar-icon {
     width: auto;
     height: 80px;
 }
-.rb-index-menu , .rb-about {
+
+.rb-index-menu,
+.rb-about {
     text-decoration: none;
     color: black;
     margin: 5%;
 }
+
 .rb-nav-link:hover {
-   background-color: rgb(245, 236, 224);
-   padding: 4%;
+    background-color: rgb(245, 236, 224);
+    padding: 4%;
 }
-.rb-home-menu, .rb-about-menu {
+
+.rb-home-menu,
+.rb-about-menu {
     margin-left: -30%
 }
+
 .col {
     padding: 3%;
     margin: -2%;
     font-size: 16px;
 }
+
 .rb-nav-item {
     padding: 3px;
 }
+
 .dropdown-toggle {
     margin-left: -55%;
 }
+
 /*Section*/
-.rb-section-experience  {
+.rb-section-experience {
     background-color: rgb(136, 158, 168);
     width: 100%;
     height: 90%;
     padding-bottom: 5%;
 }
+
 /*Section content design*/
 .container.rb-experience-container {
     margin-bottom: 8%;
@@ -45,27 +56,34 @@
     align-items: center;
     max-width: 90%;
 }
-.rb-heading-p, .rb-heading {
+
+.rb-heading-p,
+.rb-heading {
     text-align: center;
     text-shadow: 1px 1px rgb(82, 130, 233);
     color: rgb(253, 249, 249);
 }
+
 .rb-heading-p {
     padding-top: 4%;
     font-weight: 500;
     font-size: 18px;
 }
+
 .rb-heading-p:hover {
     color: red;
     text-decoration: overline;
 }
+
 .rb-link-experience {
     text-decoration: none;
 }
+
 .rb-heading:hover {
     transform: scale(0.6);
     color: rgb(7, 36, 117);
 }
+
 .rb-experience-box {
     border: 1px solid black;
     border-radius: 4%;
@@ -73,31 +91,67 @@
     text-align: justify;
     background-color: #e5f8f8;
 }
+
 .rb-experience-box h4 {
     margin-bottom: 2rem;
     text-align: center;
 }
+
 .rb-checkbox {
     text-align: center;
     color: black;
 }
+
 .rb-form-check-input {
     color: black;
 }
+
 /*Class that was added to js that the changed color is red*/
 .rb-checked {
     color: rgb(255, 15, 47);
 }
+
+/*Footer*/
+.social-icons-wrapper .fab {
+    font-size: 19px;
+    margin: 4px;
+    color: rgb(244, 229, 229);
+    transition: all 0.5s ease;
+    display: inline;
+}
+
+.social-icons-wrapper a {
+    text-decoration: none;
+}
+
+.social-icons-wrapper .fa-facebook:hover {
+    color: #0f2cd0;
+}
+
+.social-icons-wrapper .fa-instagram:hover {
+    color: rgb(187, 15, 92);
+}
+
+.social-icons-wrapper .fa-github:hover {
+    color: rgb(0, 9, 9);
+    background-color: rgb(255, 255, 255);
+}
+
 /* Only for small devices(phones) */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
+
     /*Header navbar menu*/
-    .rb-home-menu, .rb-about-menu {
+    .rb-home-menu,
+    .rb-about-menu {
         margin-left: -50%;
     }
 }
+
 /*Header for small devices */
-@media only screen and (max-width: 375px){
-    .rb-about-menu, .rb-home-menu {
+@media only screen and (max-width: 375px) {
+
+    .rb-about-menu,
+    .rb-home-menu {
         margin-left: -15%;
     }
 }

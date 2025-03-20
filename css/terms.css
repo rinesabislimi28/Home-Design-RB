@@ -2,63 +2,80 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 /*Header*/
 .rb-navbar-icon {
     width: auto;
     height: 80px;
 }
-.rb-index-menu , .rb-about {
+
+.rb-index-menu,
+.rb-about {
     text-decoration: none;
     color: black;
     margin: 5%;
 }
+
 .rb-nav-link:hover {
-   background-color: rgb(245, 236, 224);
-   padding: 4%;
+    background-color: rgb(245, 236, 224);
+    padding: 4%;
 }
-.rb-home-menu, .rb-about-menu {
+
+.rb-home-menu,
+.rb-about-menu {
     margin-left: -30%
 }
+
 .col {
     padding: 3%;
     margin: -2%;
     font-size: 16px;
 }
+
 .rb-nav-item {
     padding: 3px;
 }
+
 .dropdown-toggle {
     margin-left: -55%;
 }
+
 /*Section*/
 #rb-terms-section {
     background-color: rgb(247, 215, 210);
 }
+
 .rb-main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 10px;
 }
+
 .rb-group .rb-section-text {
     color: rgb(11, 5, 17);
     margin: 5% 5% 0% -4%;
 }
+
 .rb-section-text:hover {
     text-decoration: underline;
     text-decoration-color: red;
 }
+
 /*Color of font when is hover*/
 i.rb-font:hover {
     color: red;
 }
+
 .rb-group .rb-content {
     padding: 0px 20px;
     border-left: 3px solid rgb(0, 0, 0);
 }
+
 /*Design of border color when is hover*/
 .rb-content:hover {
     border-left-color: red;
 }
+
 /*Design of content the box*/
 .rb-group .rb-content .rb-box {
     padding: 20px;
@@ -68,39 +85,76 @@ i.rb-font:hover {
     margin-bottom: 20px;
     text-align: justify;
 }
+
 /*Design of box when is hover*/
 .rb-group .rb-content .rb-box:hover {
     box-shadow: 0px 3px 12px 0px rgb(241, 46, 46);
     border: 10px solid transparent;
 }
+
 .rb-box h3 {
     font-size: 20px;
     padding: 10px 0px 10px;
     color: rgb(0, 0, 0);
     text-align: center;
 }
+
 .rb-box p {
-    color:rgb(11, 5, 17);
+    color: rgb(11, 5, 17);
     line-height: 1.0;
     font-size: 16px;
 }
+
+/*Footer*/
+.social-icons-wrapper .fab {
+    font-size: 19px;
+    margin: 4px;
+    color: rgb(244, 229, 229);
+    transition: all 0.5s ease;
+    display: inline;
+}
+
+.social-icons-wrapper a {
+    text-decoration: none;
+}
+
+.social-icons-wrapper .fa-facebook:hover {
+    color: #0f2cd0;
+}
+
+.social-icons-wrapper .fa-instagram:hover {
+    color: rgb(187, 15, 92);
+}
+
+.social-icons-wrapper .fa-github:hover {
+    color: rgb(0, 9, 9);
+    background-color: rgb(255, 255, 255);
+}
+
 /*Only for small devices(phones)*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
+
     /*Header navbar menu*/
-    .rb-home-menu, .rb-about-menu {
+    .rb-home-menu,
+    .rb-about-menu {
         margin-left: -50%;
     }
+
     /*Section*/
     .rb-main {
         grid-template-columns: 1fr;
     }
+
     .rb-group {
         margin: 5%;
     }
 }
+
 /*Header for small devices */
-@media only screen and (max-width: 375px){
-    .rb-about-menu, .rb-home-menu {
+@media only screen and (max-width: 375px) {
+
+    .rb-about-menu,
+    .rb-home-menu {
         margin-left: -15%;
     }
 }

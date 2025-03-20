@@ -8,40 +8,52 @@
     width: auto;
     height: 80px;
 }
-.rb-index-menu , .rb-about {
+
+.rb-index-menu,
+.rb-about {
     text-decoration: none;
     color: black;
     margin: 5%;
 }
+
 .rb-nav-link:hover {
-   background-color: rgb(245, 236, 224);
-   padding: 4%;
+    background-color: rgb(245, 236, 224);
+    padding: 4%;
 }
-.rb-home-menu, .rb-about-menu {
+
+.rb-home-menu,
+.rb-about-menu {
     margin-left: -30%
 }
+
 .col {
     padding: 3%;
     margin: -2%;
     font-size: 16px;
 }
+
 .rb-nav-item {
     padding: 3px;
 }
+
 .dropdown-toggle {
     margin-left: -55%;
 }
+
 /*Section*/
 section {
     padding: 25px 0;
 }
+
 .rb-container {
     padding-top: 10px;
 }
+
 /*Design for the "about" page*/
 .rb-about-section {
     background-color: rgb(81, 123, 151);
 }
+
 .rb-about-section img {
     height: 30em;
     object-fit: cover;
@@ -50,34 +62,40 @@ section {
     border-radius: 25px;
     margin-bottom: 5%;
 }
+
 .rb-about-section img:hover {
     border: 2px solid rgb(0, 0, 0);
     box-shadow: 5px 5px 5px 5px rgb(29, 51, 54);
 }
+
 .rb-about-text {
     font-weight: 400;
     color: rgb(0, 0, 0);
     text-align: justify;
 }
+
 .rb-main {
     max-width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
+
 .rb-about-text h1 {
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-size: 50px;
     margin: 30px 0px;
     text-align: left;
     font-weight: 600;
 }
+
 .rb-about-text h5 {
     text-transform: capitalize;
     font-size: 25px;
     margin-bottom: 25px;
     font-weight: 600;
 }
+
 /*Button*/
 .rb-button {
     background-color: rgb(9, 142, 29);
@@ -88,20 +106,53 @@ section {
     padding: 20px 30px;
     transition: .4s ease;
 }
+
 .rb-button:hover {
-    background-color:rgb(34, 36, 196);
+    background-color: rgb(34, 36, 196);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
 }
-@media only screen and (max-width: 768px){
+
+/*Footer*/
+.social-icons-wrapper .fab {
+    font-size: 19px;
+    margin: 4px;
+    color: rgb(244, 229, 229);
+    transition: all 0.5s ease;
+    display: inline;
+}
+
+.social-icons-wrapper a {
+    text-decoration: none;
+}
+
+.social-icons-wrapper .fa-facebook:hover {
+    color: #0f2cd0;
+}
+
+.social-icons-wrapper .fa-instagram:hover {
+    color: rgb(187, 15, 92);
+}
+
+.social-icons-wrapper .fa-github:hover {
+    color: rgb(0, 9, 9);
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 768px) {
+
     /*Header navbar menu*/
-    .rb-about-menu, .rb-home-menu {
+    .rb-about-menu,
+    .rb-home-menu {
         margin-left: -50%;
     }
 }
+
 /*Header for even smaller devices */
-@media only screen and (max-width: 375px){
-    .rb-about-menu, .rb-home-menu {
+@media only screen and (max-width: 375px) {
+
+    .rb-about-menu,
+    .rb-home-menu {
         margin-left: -15%;
     }
 }

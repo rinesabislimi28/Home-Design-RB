@@ -1,35 +1,45 @@
 * {
-    font-family:'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+
 /*Header*/
 .rb-navbar-icon {
     width: auto;
     height: 80px;
 }
-.rb-index-menu , .rb-about {
+
+.rb-index-menu,
+.rb-about {
     text-decoration: none;
     color: black;
     margin: 5%;
 }
+
 .rb-nav-link:hover {
-   background-color: rgb(245, 236, 224);
-   padding: 4%;
+    background-color: rgb(245, 236, 224);
+    padding: 4%;
 }
-.rb-home-menu, .rb-about-menu {
+
+.rb-home-menu,
+.rb-about-menu {
     margin-left: -30%
 }
+
 .col {
     padding: 3%;
     margin: -2%;
     font-size: 16px;
 }
+
 .rb-nav-item {
     padding: 3px;
 }
+
 .dropdown-toggle {
     margin-left: -55%;
 }
+
 /*Section*/
 #rb-video-section {
     display: flex;
@@ -37,6 +47,7 @@
     align-items: center;
     min-height: 100vh;
 }
+
 /*Button to go in the video*/
 .rb-btn {
     position: relative;
@@ -48,6 +59,7 @@
     gap: 15px;
     cursor: pointer;
 }
+
 .rb-btn .rb-play {
     position: relative;
     width: 80px;
@@ -57,10 +69,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 15px 25px  red;
+    box-shadow: 0 15px 25px red;
     cursor: pointer;
     transition: 0.5s;
 }
+
 .rb-btn .rb-play::before {
     content: '';
     position: absolute;
@@ -70,14 +83,17 @@
     border-bottom: 15px solid transparent;
     transform: translateX(5px);
 }
+
 /*Hide button when video is shown, and background get color*/
 .rb-play.hide-button {
     background-color: rgb(152, 221, 157);
 }
+
 /*Content before the button remove*/
 .rb-play.hide-button::before {
     content: none;
 }
+
 .rb-btn p {
     margin-top: 10px;
     margin-left: -8px;
@@ -87,10 +103,12 @@
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+
 /*Design the button to enter the video*/
 .rb-btn.rb-active .rb-play {
     box-shadow: 0 0 0 150vh rgb(152, 221, 157);
 }
+
 .rb-video {
     position: fixed;
     top: 50%;
@@ -104,18 +122,22 @@
     margin: 5px;
     transition: 0.5s;
 }
+
 .rb- rb.active {
     display: none;
 }
+
 .rb-video.rb-active {
     transform: translate(-50%, -50%) scale(1);
     transition-delay: 0.5s;
 }
+
 .rb-video video {
     width: 300px;
     border: 7px solid black;
     box-shadow: 0 15px 35px black
 }
+
 /*Design of button for close the video*/
 .rb-video .rb-close {
     position: absolute;
@@ -126,16 +148,48 @@
     text-transform: uppercase;
     color: white;
 }
+
+/*Footer*/
+.social-icons-wrapper .fab {
+    font-size: 19px;
+    margin: 4px;
+    color: rgb(244, 229, 229);
+    transition: all 0.5s ease;
+    display: inline;
+}
+
+.social-icons-wrapper a {
+    text-decoration: none;
+}
+
+.social-icons-wrapper .fa-facebook:hover {
+    color: #0f2cd0;
+}
+
+.social-icons-wrapper .fa-instagram:hover {
+    color: rgb(187, 15, 92);
+}
+
+.social-icons-wrapper .fa-github:hover {
+    color: rgb(0, 9, 9);
+    background-color: rgb(255, 255, 255);
+}
+
 /*Only for small devices(phones)*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
+
     /*Header navbar menu*/
-    .rb-home-menu, .rb-about-menu {
+    .rb-home-menu,
+    .rb-about-menu {
         margin-left: -50%;
     }
 }
+
 /*Header for small devices */
-@media only screen and (max-width: 375px){
-    .rb-about-menu, .rb-home-menu {
+@media only screen and (max-width: 375px) {
+
+    .rb-about-menu,
+    .rb-home-menu {
         margin-left: -15%;
     }
 }

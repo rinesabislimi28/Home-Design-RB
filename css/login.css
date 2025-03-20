@@ -2,63 +2,77 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 /*Header*/
 .rb-navbar-icon {
     width: auto;
     height: 80px;
 }
-.rb-index-menu , .rb-about {
+
+.rb-index-menu,
+.rb-about {
     text-decoration: none;
     color: black;
     margin: 5%;
 }
+
 .rb-nav-link:hover {
-   background-color: rgb(245, 236, 224);
-   padding: 4%;
+    background-color: rgb(245, 236, 224);
+    padding: 4%;
 }
-.rb-home-menu, .rb-about-menu {
+
+.rb-home-menu,
+.rb-about-menu {
     margin-left: -30%
 }
+
 .col {
     padding: 3%;
     margin: -2%;
     font-size: 16px;
 }
+
 .rb-nav-item {
     padding: 3px;
 }
+
 .dropdown-toggle {
     margin-left: -55%;
 }
+
 /*Section*/
-.rb-login  {
+.rb-login {
     height: 90vh;
     width: 100%;
-    background-color:#a3dde6;
+    background-color: #a3dde6;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .rb-form {
     background-color: white;
     border: 2px solid black;
     border-radius: 8%;
     max-width: 440px;
     padding: 5%;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 .rb-heading {
     font-weight: 600;
     font-size: 30px;
     color: rgb(8, 61, 137);
     text-align: center;
 }
+
 form .rb-field {
     position: relative;
     height: 50px;
     width: 100%;
     margin-top: 8%;
 }
+
 /*Eyes icon*/
 .rb-eyes-icon {
     position: absolute;
@@ -67,19 +81,24 @@ form .rb-field {
     top: 50%;
     right: 10px;
 }
+
 .rb-field .rb-btn {
     background-color: rgb(8, 135, 167);
     color: white;
 }
+
 .rb-field .rb-btn:hover {
-    background-color:rgb(10, 41, 143);
-    color: rgb(255, 247, 247);   
+    background-color: rgb(10, 41, 143);
+    color: rgb(255, 247, 247);
 }
+
 .rb-field input {
     border: 1px solid black;
     padding: 10px 15px;
 }
-.rb-field  input ,.rb-field .rb-btn {
+
+.rb-field input,
+.rb-field .rb-btn {
     font-weight: 500;
     font-size: 17px;
     height: 100%;
@@ -87,38 +106,75 @@ form .rb-field {
     border: 1px solid black;
     border-radius: 3%;
 }
+
 .rb-form-link {
     text-align: right;
     margin-top: 2%;
 }
+
 .rb-form-link p {
     text-align: center;
     font-size: 100%;
     font-weight: 500;
 }
+
 .rb-form a {
     text-decoration: none;
 }
+
 .rb-form a:hover {
     color: red;
     text-decoration: underline;
 }
+
+/*Footer*/
+.social-icons-wrapper .fab {
+    font-size: 19px;
+    margin: 4px;
+    color: rgb(244, 229, 229);
+    transition: all 0.5s ease;
+    display: inline;
+}
+
+.social-icons-wrapper a {
+    text-decoration: none;
+}
+
+.social-icons-wrapper .fa-facebook:hover {
+    color: #0f2cd0;
+}
+
+.social-icons-wrapper .fa-instagram:hover {
+    color: rgb(187, 15, 92);
+}
+
+.social-icons-wrapper .fa-github:hover {
+    color: rgb(0, 9, 9);
+    background-color: rgb(255, 255, 255);
+}
+
 /*Only for small devices (phones)*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .rb-login {
         height: 100vh;
     }
 }
+
 /* Only for small devices(phones) */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
+
     /*Header navbar menu*/
-    .rb-home-menu, .rb-about-menu {
+    .rb-home-menu,
+    .rb-about-menu {
         margin-left: -50%;
     }
 }
+
 /*Header for small devices */
-@media only screen and (max-width: 375px){
-    .rb-about-menu, .rb-home-menu {
+@media only screen and (max-width: 375px) {
+
+    .rb-about-menu,
+    .rb-home-menu {
         margin-left: -15%;
     }
 }

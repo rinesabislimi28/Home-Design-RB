@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', function(){
       btn.querySelector('.rb-play').classList.remove('hide-button');
       document.querySelector('footer').style = '';
       document.querySelector('header').style = '';
-      videos.pause();
+      videos.pause(); 
     }
 });

@@ -62,7 +62,7 @@
 }
 
 .rb-section-contain h1 {
-    color: #fcfffa;
+    color: #d9ddd6;
     font-weight: 200;
     display: flex;
     justify-content: center;
@@ -75,11 +75,11 @@
 }
 
 .rb-btn:hover {
-    box-shadow: 5px 7px #3c2d2d;
+    box-shadow: 5px 7px #cdbfad;
 }
 
 .rb-btn a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 

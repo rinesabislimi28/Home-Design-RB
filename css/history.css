@@ -95,7 +95,7 @@
 
 /*Design of cards*/
 .rb-section-history {
-    background-color: #e2eecf;
+    background-color: #e7ebe1;
 }
 
 .rb-text {
@@ -114,7 +114,7 @@
 }
 
 .rb-card {
-    background-color: rgb(79, 206, 92);
+    background-color: rgb(209, 226, 211);
     border-radius: 15px;
     width: 325px;
     margin: 15px;
@@ -151,7 +151,7 @@
 
 .rb-card-content button:hover {
     transform: rotate(360deg);
-    background-color: rgb(49, 144, 8);
+    background-color: rgb(98, 214, 48);
     color: black;
     transition: .5s ease;
 }

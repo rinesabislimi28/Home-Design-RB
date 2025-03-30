@@ -200,6 +200,8 @@ button a {
 }
 
 @media only screen and (max-width: 1024px) {
+
+    /* When the checkbox with the ID 'rb-checkbox' is checked, move the slider's pseudo-element */
     #rb-checkbox:checked+.rb-slider:before {
         transform: translateX(35px);
     }

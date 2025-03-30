@@ -144,6 +144,7 @@ section {
     /*Header navbar menu*/
     .rb-about-menu,
     .rb-home-menu {
+        /* Moves the element 50% to the left relative to its own width */
         margin-left: -50%;
     }
 }
@@ -153,6 +154,7 @@ section {
 
     .rb-about-menu,
     .rb-home-menu {
+        /* Moves the element 15% to the left relative to its own width */
         margin-left: -15%;
     }
 }
